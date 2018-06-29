@@ -1,0 +1,30 @@
+%center-v {
+  position: relative;
+  top: 50%;
+  @include translateY(-50%);
+}
+
+%center-h {
+  position: relative;
+  left: 50%;
+  @include translateX(-50%);
+}
+
+%no-bullets {
+  list-style: none;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+%no-border {
+  border: 0;
+}
+
+%no-border-radius {
+  border-radius: 0;
+}
+
+%no-shadow {
+  box-shadow: none;
+}

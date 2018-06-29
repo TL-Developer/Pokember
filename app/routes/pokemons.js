@@ -3,10 +3,10 @@ import Route from '@ember/routing/route';
 export default Route.extend({
 
   model () {
-    let Pokemons = [];
+    const uriPokemons = "https://pokeapi.co/api/v2/pokemon/?limit=20";
 
-    return $.getJSON('https://pokeapi.co/api/v2/pokemon/?limit=40').then(data => {
-      return data.results
+    return $.getJSON(uriPokemons).then(data => {
+      return data.results;
     });
   }
 

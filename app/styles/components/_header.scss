@@ -1,0 +1,6 @@
+.header {
+  background: $pallet-3;
+  color: $white;
+  @extend %no-border-radius;
+  @extend %no-border;
+}

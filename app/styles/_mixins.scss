@@ -1,0 +1,15 @@
+@mixin translateY($Y) {
+  -webkit-transform: translateY($Y);
+  -moz-transform: translateY($Y);
+  -ms-transform: translateY($Y);
+  -o-transform: translateY($Y);
+  transform: translateY($Y);
+}
+
+@mixin translateX($X) {
+  -webkit-transform: translateX($X);
+  -moz-transform: translateX($X);
+  -ms-transform: translateX($X);
+  -o-transform: translateX($X);
+  transform: translateX($X);
+}
