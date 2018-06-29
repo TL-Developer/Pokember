@@ -1,0 +1,9 @@
+<ul>
+{{#each pokemons as |pokemon|}}
+  <li id="{{pokemon.id}}" {{action 'getPokemon' pokemon}}>
+    {{pokemon.name}}
+  </li>
+{{/each}}
+</ul>
+
+{{yield}}
