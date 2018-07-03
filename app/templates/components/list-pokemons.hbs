@@ -1,11 +1,11 @@
 <h2>{{title}}</h2>
 
 <ul>
-{{#each pokemons as |pokemon|}}
-  <li id="{{pokemon.id}}" {{action 'getPokemon' pokemon}}>
-    {{pokemon.name}}
-  </li>
-{{/each}}
+  {{#each pokemons as |pokemon|}}
+    <li id="{{pokemon.id}}" {{action 'getPokemon' pokemon}}>
+      {{pokemon.name}}
+    </li>
+  {{/each}}
 </ul>
 
 {{yield}}
