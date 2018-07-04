@@ -15,8 +15,8 @@ export default Route.extend({
     //   pokemons: getPokemons()
     // })
 
-    return RSVP.hash(
-      this.store.findAll('pokemons')
-    )
+    // return RSVP.hash(
+    return this.store.findAll('pokemons')
+    // )
   }
 });
