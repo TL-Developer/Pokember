@@ -4,17 +4,12 @@ import {set, get} from '@ember/object';
 
 export default Component.extend({
   store: service(),
-
   actions: {
     getPokemon (pokemon) {
-      set(this, 'pokemon', {
-        name: 'pikachu',
-        weight: '234'
-      });
-      // $.getJSON(pokemon.url).then(pokemon => {
-      //   debugger
-      //   set(this, 'pokemon', pokemon.name)
-      // });
+      let PokemonModel = this.get('model.pokemon');
+      set(this.model, 'pokemon', pokemon);
+      // PokemonModel.set(pokemon);
+      // PokemonModel.save();
     }
   }
 });

@@ -1,12 +1,12 @@
 <div class="row">
   <div class="col-md-6">
   {{log 'modelmodel' model}}
-    {{list-pokemons title="List of Pokemons" pokemons=model}}
+    {{list-pokemons title="List of Pokemons" model=model}}
   </div>
 
 
   <div class="col-md-6">
-    {{details-pokemon title="Pokemon Details"}}
+    {{details-pokemon title="Pokemon Details" pokemon=model.pokemon}}
   </div>
 </div>
 <!--

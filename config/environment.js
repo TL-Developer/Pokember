@@ -5,6 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'pokember',
     environment,
     rootURL: '/',
+    host: 'http://pokeapi.salestock.net',
+    namespace: 'api/v2',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -29,6 +31,8 @@ module.exports = function(environment) {
     ENV.APP.LOG_TRANSITIONS = true;
     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.host = 'http://pokeapi.salestock.net';
+    ENV.namespace = 'api/v2';
   }
 
   if (environment === 'test') {
@@ -44,7 +48,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.host = 'http://pokeapi.salestock.net';
+    ENV.namespace = 'api/v2';
   }
 
   return ENV;
