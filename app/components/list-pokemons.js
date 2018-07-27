@@ -6,10 +6,10 @@ export default Component.extend({
   store: service(),
   actions: {
     getPokemon (pokemon) {
-      let PokemonModel = this.get('model.pokemon');
-      set(this.model, 'pokemon', pokemon);
-      // PokemonModel.set(pokemon);
-      // PokemonModel.save();
+      debugger
+      this.get('store').findRecord('pokemon', 2).then(function(pok) {
+        // set(this.model, 'pokemon', pok);
+      });
     }
   }
 });
